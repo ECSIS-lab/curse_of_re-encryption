@@ -26,8 +26,17 @@ https://github.com/homma-lab/curse_of_re-encryption (published in this repositor
     ```pip install numpy tensorflow scikit-learn```
 
 3. 固定およびランダムの波形をそれぞれfixed.npy，random.npyとし，dl.pyと同じディレクトリ内の./wave/_imple_/trainに配置してください．
-  例として，このレポジトリをクローンした場合は，/curse_of_re-encryption/distinguish_attack/wave/_imple_/trainが配置場所となります．
-  _imple_ にはaes_nonprotect_hw, aes_nonprotect_sw, keccak_nonprotect_sw, aes_masked_hw, aes_masked_sw, ntru_nonprotect_swが入りますので，それぞれの波形を入手してください．
+   例として，このレポジトリをクローンした場合は，/curse_of_re-encryption/distinguish_attack/wave/_imple_/trainが配置場所となります．
+   dl.py内では _imple_ として以下の実装による波形が指定されていますので，それぞれ入手し，配置してください．
+  
+  | ディレクトリ名 (_imple_) | 内容 |
+| -------------- | ---- |
+| aes_nonprotect_hw | AESの未対策ハードウェア実装 |
+| keccak_nonprotect_sw | ケチャックの未対策ソフトウェア実装 |
+| aes_masked_hw | AESのマスク対策ハードウェア実装 |
+| aes_masked_sw | AESのマスク対策ソフトウェア実装 | 
+| ntru_nonprotect_sw| NTRUの未対策ソフトウェア実装 |
+
 
 4. モデル性能評価用の固定およびランダムの波形を同様にfixed.npy，random.npyとし，./wave/_imple_/testに配置してください．
     
