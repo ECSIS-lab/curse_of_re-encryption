@@ -15,31 +15,27 @@ https://github.com/homma-lab/curse_of_re-encryption (published in this repositor
 
 # Quick Start Guide
 
-識別攻撃のための深層学習モデルを作成・評価するためには，以下の手順に従ってください．
-
-1. このレポジトリをクローンし，実験用のソースコードを取得します．
+1. Clone this repository to get the source code for the experiment.
 
     ```git clone https://github.com/ECSIS-lab/curse_of_re-encryption.git```
 
-2. 実験用のソースコードdl.pyが必要とするモジュールをインストールします．
+2. Install the modules for the use of our source code dl.py
 
     ```pip install numpy tensorflow scikit-learn```
 
-3. 固定およびランダムの波形をそれぞれfixed.npy，random.npyとし，dl.pyと同じディレクトリ内の./wave/_imple_/trainに配置してください．
-   例として，このレポジトリをクローンした場合は，/curse_of_re-encryption/distinguish_attack/wave/_imple_/trainが配置場所となります．
-   dl.py内では _imple_ として以下の実装による波形が指定されていますので，それぞれ入手し，配置してください．
+3. Let training datasets of fixed and random trace be fixed.npy and random.npy, respectively, and put them at ./wave/_imple_/train with dl.py.
+   For example, if you clonde this repository, it is /curse_of_re-encryption/distinguish_attack/wave/_imple_/train
+   As dl.py supports the following implementations as _imple_ (after you acquired traces for each implementation), please put it as
   
-  | ディレクトリ名 (_imple_) | 内容 |
+| Directry name (_imple_) | Target implementation |
 | -------------- | ---- |
-| aes_nonprotect_hw | AESの未対策ハードウェア実装 |
-| keccak_nonprotect_sw | ケチャックの未対策ソフトウェア実装 |
-| aes_masked_hw | AESのマスク対策ハードウェア実装 |
-| aes_masked_sw | AESのマスク対策ソフトウェア実装 | 
-| ntru_nonprotect_sw| NTRUの未対策ソフトウェア実装 |
+| aes_nonprotect_hw | Non-protected AES hardware |
+| keccak_nonprotect_sw | Non-protected keccak software |
+| aes_masked_hw | Masked AES hardware |
+| aes_masked_sw | Masked AES software | 
 
-
-4. モデル性能評価用の固定およびランダムの波形を同様にfixed.npy，random.npyとし，./wave/_imple_/testに配置してください．
+4. As well, let test datasets be fixed.npy and random.npy, and put them at ./wave/_imple_/test.
     
-5. dl.pyを実行します．
+5. Execute dl.py.
 
    ```python dl.py``` 
