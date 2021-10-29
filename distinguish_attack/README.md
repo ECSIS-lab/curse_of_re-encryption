@@ -29,7 +29,7 @@ https://github.com/homma-lab/curse_of_re-encryption (published in this repositor
   例として，このレポジトリをクローンした場合は，/curse_of_re-encryption/distinguish_attack/wave/_imple_/trainが配置場所となります．
   _imple_ にはaes_nonprotect_hw, aes_nonprotect_sw, keccak_nonprotect_sw, aes_masked_hw, aes_masked_sw, ntru_nonprotect_swが入りますので，それぞれの波形を入手してください．
 
-4. モデル性能評価用の固定およびランダムの波形を同様にfixed.npy，random.npyとし，./wave/imple/testに配置してください．
+4. モデル性能評価用の固定およびランダムの波形を同様にfixed.npy，random.npyとし，./wave/_imple_/testに配置してください．
     
 5. dl.pyを実行します．
 
