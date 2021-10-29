@@ -12,3 +12,25 @@ https://github.com/Ko-/aes-armcortexm
 
 a mased AES hardware based on threshod implementation presented in COSADE 2017 by Ueno, Homma, and Aoki as masked hardware
 https://github.com/homma-lab/curse_of_re-encryption (published in this repository)
+
+# Quick Start Guide
+
+識別攻撃のための深層学習モデルを作成・評価するためには，以下の手順に従ってください．
+
+1. このレポジトリをクローンし，実験用のソースコードを取得します．
+
+    ```git clone https://github.com/ECSIS-lab/curse_of_re-encryption.git```
+
+2. 実験用のソースコードdl.pyが必要とするモジュールをインストールします．
+
+    ```pip install numpy tensorflow scikit-learn```
+
+3. 固定およびランダムの波形をそれぞれfixed.npy，random.npyとし，dl.pyと同じディレクトリ内の./wave/_imple_/trainに配置してください．
+  例として，このレポジトリをクローンした場合は，/curse_of_re-encryption/distinguish_attack/wave/_imple_/trainが配置場所となります．
+  _imple_ にはaes_nonprotect_hw, aes_nonprotect_sw, keccak_nonprotect_sw, aes_masked_hw, aes_masked_sw, ntru_nonprotect_swが入りますので，それぞれの波形を入手してください．
+
+4. モデル性能評価用の固定およびランダムの波形を同様にfixed.npy，random.npyとし，./wave/imple/testに配置してください．
+    
+5. dl.pyを実行します．
+
+   ```python dl.py``` 
