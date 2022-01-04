@@ -10,4 +10,6 @@ This hardware is used for the experiment in "Curse of Re-encryption" paper.
 
 ## distinguish_attack
 
-Datasets used in the experiment.
+Code and datasets used in the experiment.
+
+See ```./distinguish/README.rd```  for details.
