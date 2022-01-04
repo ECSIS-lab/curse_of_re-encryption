@@ -167,7 +167,7 @@ def main():
         ta = test(imple)
 
         print('\n--- ' + imple + ' ---')
-        print('val accuracy : ' + str(va)[:5] + ' | test accuracy : ' + str(ta)[:5])
+        print('val accuracy : ' + str(va)[:6] + ' | test accuracy : ' + str(ta)[:6])
         
         time.sleep(5)
 
