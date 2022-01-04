@@ -27,12 +27,12 @@ https://github.com/homma-lab/curse_of_re-encryption (published in this repositor
    For example, if you clonde this repository, it is /curse_of_re-encryption/distinguish_attack/wave/_imple_/train
    As dl.py supports the following implementations as _imple_ (after you acquired traces for each implementation), please put it as
   
-| Directry name (_imple_) | Target implementation |
-| -------------- | ---- |
-| aes_nonprotect_hw | Non-protected AES hardware |
-| keccak_nonprotect_sw | Non-protected keccak software |
-| aes_masked_hw | Masked AES hardware |
-| aes_masked_sw | Masked AES software | 
+| Directry name (_imple_) | Target implementation | Expected location of the traces |
+| -------------- | ---- | ----------- |
+| aes_nonprotect_hw | Non-protected AES hardware | |
+| keccak_nonprotect_sw | Non-protected keccak software | | 
+| aes_masked_hw | Masked AES hardware | | 
+| aes_masked_sw | Masked AES software | | 
 
 4. As well, let test datasets be fixed.npy and random.npy, and put them at ./wave/_imple_/test.
     
