@@ -12,4 +12,4 @@ This hardware is used for the experiment in "Curse of Re-encryption" paper.
 
 Code and datasets used in the experiment.
 
-See ```./distinguish/README.rd```  for details.
+See ```./distinguish/README.md```  for details.
