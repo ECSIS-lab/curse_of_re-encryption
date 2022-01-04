@@ -41,15 +41,19 @@ https://github.com/homma-lab/curse_of_re-encryption (published in this repositor
    ```python dl.py``` 
    
 ## Repository structure 
-- ./dl.py
+### ./dl.py
 
 The python file contains data-loading, train and test.
 
-- ./dataset
+### ./requirements.txt
+
+The text file contains the dependencies of the python packages needed to run dl.py.
+
+### ./dataset
 
 The directory containing the datasets used in this distinguish attack. 
 It's in .zip format, so you need to unzip it before running ```python dl.py```.
 
-- ./model
+### ./model
 
 The directory where the trained models will be saved after running dl.py.
