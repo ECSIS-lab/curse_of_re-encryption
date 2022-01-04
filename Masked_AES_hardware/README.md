@@ -1,4 +1,4 @@
-Masked AES hardware
+# Masked AES hardware
 
 Masked AES hardware based on 2-share threshold implementation, corresponding to COSADE 2017 paper by Rei Ueno, Naofumi Homma, and Takafumi Aoki
 This hardware is used for the experiment in "Curse of Re-encryption" paper.
