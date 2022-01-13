@@ -30,7 +30,8 @@ https://github.com/homma-lab/curse_of_re-encryption (published in this repositor
 | Directry name (_imple_) | Target implementation | Details of the waveforms used in DL |
 | -------------- | ---- | ----------- |
 | aes_nonprotect_hw | Non-protected AES hardware | round2 |
-| keccak_nonprotect_sw | Non-protected keccak software |  | 
+| aes_nonprotect_sw | Non-protected AES software | round1 |
+| keccak_nonprotect_sw | Non-protected keccak software | Part of Keccak process | 
 | aes_masked_hw | Masked AES hardware |  | 
 | aes_masked_sw | Masked AES software | Entire 10 rounds | 
 
@@ -51,9 +52,32 @@ The text file contains the dependencies of the python packages needed to run dl.
 
 ### ./dataset
 
-The directory containing the datasets used in this distinguish attack. 
-It's in .zip format, so you need to unzip it before running ```python dl.py```.
+Replace this folder with the folder ```dataset``` that you get when you extract the zip file you downloaded from Google Drive.
+Download the dataset from the link below.
+https://drive.google.com/file/d/17PSrk208qVx61QSO-jRBXMHunNNNGxVY/view?usp=sharing
 
+The dataset in Google Drive is saved as a zip file, so you will need to unzip it before running ```de.py```.
+Therefore, when running the code, this directory structure should look like this,
+
+dataset/
+  ├ aes_nonprotect_sw/
+  │  ├ test/
+  │  │  ├ fixed.npy
+  │  │  └ random.npy
+  │  └ train/
+  │     ├ fixed.npy
+  │     └ random.npy
+  │
+  ├ aes_nonprotect_hw/
+  │  ├ test/
+  │  │  ├ fixed.npy
+  │  │  └ random.npy
+  │  └ train/
+  │     ├ fixed.npy
+  │     └ random.npy
+  ...
+  
+  
 ### ./model
 
 The directory where the trained models will be saved after running dl.py.
