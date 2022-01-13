@@ -23,8 +23,8 @@ https://github.com/homma-lab/curse_of_re-encryption (published in this repositor
 
     ```pip install numpy tensorflow scikit-learn```
 
-3. Let training datasets of fixed and random trace be fixed.npy and random.npy, respectively, and put them at ./wave/_imple_/train with dl.py.
-   For example, if you clonde this repository, it is /curse_of_re-encryption/distinguish_attack/wave/_imple_/train
+3. Let training and test datasets of fixed and random trace be fixed.npy and random.npy, respectively, and put them at ./dataset/_imple_/train(or test) with dl.py.
+   Please refer to ./dataset section of Repository structure below for detailed placement instructions.
    As dl.py supports the following implementations as _imple_ (after you acquired traces for each implementation), please put it as
   
 | Directry name (_imple_) | Target implementation | Details of the waveforms used in DL |
@@ -35,9 +35,7 @@ https://github.com/homma-lab/curse_of_re-encryption (published in this repositor
 | aes_masked_hw | Masked AES hardware |  | 
 | aes_masked_sw | Masked AES software | Entire 10 rounds | 
 
-4. As well, let test datasets be fixed.npy and random.npy, and put them at ./wave/_imple_/test.
-    
-5. Execute dl.py.
+4. Execute dl.py.
 
    ```python dl.py``` 
    
