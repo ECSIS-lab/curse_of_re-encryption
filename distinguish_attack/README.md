@@ -22,7 +22,7 @@ https://github.com/homma-lab/curse_of_re-encryption (published in this repositor
 
 2. Install the modules for the use of our source code dl.py
 
-    ```pip install numpy tensorflow scikit-learn```
+    ```pip install numpy tensorflow scikit-learn tqdm```
 
 3. Let training and test datasets of fixed and random trace be fixed.npy and random.npy, respectively, and put them at ./dataset/_imple_/train(or test) with dl.py.
    Please refer to ./dataset section of Repository structure below for detailed placement instructions.
@@ -39,6 +39,28 @@ https://github.com/homma-lab/curse_of_re-encryption (published in this repositor
 4. Execute dl.py.
 
    ```python dl.py``` 
+   
+## How to view the execution results
+
+$ python dl_main.py
+
+implementation: aes_nonprotect_hw
+Train & Validation
+/# Learning progress is displayed as a progress bar.
+Epoch 1/100
+30/30 [==============================] - 4s 40ms/step - loss: 0.6226 - accuracy: 0.6678 - val_loss: 0.8554 - val_accuracy: 0.5000
+...
+30/30 [==============================] - 1s 17ms/step - loss: 0.0016 - accuracy: 0.9995 - val_loss: 0.0091 - val_accuracy: 0.9971
+
+Test
+313/313 [==============================] - 2s 4ms/step - loss: 0.0064 - accuracy: 0.9984
+/# Accuracy of both validation and test 
+val accuracy : 0.9990 | test accuracy : 0.9983
+
+Likelihood comparison
+/# Note that the calculation will take some time.
+Trace num : 1 | Nll test accuracy : 0.9053
+
    
 ## Repository structure 
 ### ./dl.py
