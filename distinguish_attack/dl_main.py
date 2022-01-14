@@ -39,11 +39,10 @@ def main():
 
         print('\nLikelihood comparison')
         
-        # The values shown in the paper were calculated using this code.
-        # For details, please refer to README.md.
+        # The code that was run to calculate the values published in the paper.
         #dl_nll_v1.nll(imple)  
         
-        # To calculate the exact accuracy, you need to run this code.
+        # The code with measures to prevent underflow.
         dl_nll_v2.nll(imple)
 
         time.sleep(5)
