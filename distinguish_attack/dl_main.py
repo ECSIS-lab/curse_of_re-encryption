@@ -5,8 +5,8 @@ import time
 
 import dl_train
 import dl_test
-import dl_nllv1
-import dl_nllv2
+import dl_nll_v1
+import dl_nll_v2
 
 import tensorflow as tf
 
@@ -38,7 +38,13 @@ def main():
         print('val accuracy : ' + str(va)[:6] + ' | test accuracy : ' + str(ta)[:6])
 
         print('\nLikelihood comparison')
-        dl_nllv2.nll(imple)
+        
+        # The values shown in the paper were calculated using this code.
+        # For details, please refer to README.md.
+        #dl_nll_v1.nll(imple)  
+        
+        # To calculate the exact accuracy, you need to run this code.
+        dl_nll_v2.nll(imple)
 
         time.sleep(5)
         exit()
