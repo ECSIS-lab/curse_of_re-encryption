@@ -36,9 +36,9 @@ https://github.com/homma-lab/curse_of_re-encryption (published in this repositor
 | aes_masked_hw | Masked AES hardware |  | 
 | aes_masked_sw | Masked AES software | Entire 10 rounds | 
 
-4. Execute dl.py.
+4. Execute dl_main.py.
 
-   ```python dl.py``` 
+   ```python dl_main.py``` 
    
 ## How to view the execution results
 
@@ -59,13 +59,28 @@ val accuracy : 0.9990 | test accuracy : 0.9983
 
 Likelihood comparison
 /# Note that the calculation will take some time.
+Accuracy of negative log-likelihood accuracy
 Trace num : 1 | Nll test accuracy : 0.9053
-
+Trace num : 2 | Nll test accuracy : 0.9726
+...
+Trace num : 2 | Nll test accuracy : 1.0000
    
 ## Repository structure 
-### ./dl.py
+### ./dl_main.py
 
-The python file contains data-loading, train and test.
+This python file is main function.
+
+### ./dl_train.py
+
+The python file contains data-loading and train.
+
+### ./dl_test.py
+
+The python file contains test.
+
+### ./dl_nll.py
+
+Calculate the log likelihood test accuracy using this Python file.
 
 ### ./requirements.txt
 
