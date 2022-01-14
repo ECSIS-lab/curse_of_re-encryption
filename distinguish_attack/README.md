@@ -10,7 +10,7 @@ http://www.aoki.ecei.tohoku.ac.jp/crypto/
 a bit-sliced masked AES software presented in SAC 2016 by Schwabe and Stoffelen as masked software
 https://github.com/Ko-/aes-armcortexm
 
-a mased AES hardware based on threshod implementation presented in COSADE 2017 by Ueno, Homma, and Aoki as masked hardware
+a masked AES hardware based on threshod implementation presented in COSADE 2017 by Ueno, Homma, and Aoki as masked hardware
 https://github.com/homma-lab/curse_of_re-encryption (published in this repository)
 
 # Quick Start Guide
