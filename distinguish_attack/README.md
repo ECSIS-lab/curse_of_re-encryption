@@ -42,6 +42,7 @@ https://github.com/homma-lab/curse_of_re-encryption (published in this repositor
    
 ## How to view the execution results
 
+```
 $ python dl_main.py
 
 implementation: aes_nonprotect_hw
@@ -54,20 +55,24 @@ Epoch 1/100
 
 Test
 313/313 [==============================] - 2s 4ms/step - loss: 0.0064 - accuracy: 0.9984
-/# Accuracy of both validation and test 
+# Accuracy of both validation and test 
 val accuracy : 0.9990 | test accuracy : 0.9983
 
 Likelihood comparison
-/# Note that the calculation will take some time.
+
+# Note that the calculation will take some time.
+
 Accuracy of negative log-likelihood accuracy
 Trace num : 1 | Nll test accuracy : 0.9053
 Trace num : 2 | Nll test accuracy : 0.9726
 ...
 Trace num : 2 | Nll test accuracy : 1.0000
 
-/# Note that the seed value is different from the value calculated in the paper, 
-/# so it may be calculated differently from the one published in the paper.
-   
+# Note that the seed value is different from the value calculated in the paper, 
+# so it may be calculated differently from the one published in the paper.
+```
+
+
 ## Repository structure 
 ### ./dl_main.py
 
