@@ -162,4 +162,4 @@ dataset/
   
 ### ./model
 
-The directory where the trained models will be saved after running dl.py.
+The directory stores the trained models after running dl.py.
