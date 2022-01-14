@@ -30,10 +30,10 @@ https://github.com/homma-lab/curse_of_re-encryption (published in this repositor
   
 | Directry name (_imple_) | Target implementation | Details of the waveforms used in DL |
 | -------------- | ---- | ----------- |
-| aes_nonprotect_hw | Non-protected AES hardware | round2 |
-| aes_nonprotect_sw | Non-protected AES software | round1 |
-| keccak_nonprotect_sw | Non-protected keccak software | Part of Keccak process | 
-| aes_masked_hw | Masked AES hardware |  | 
+| aes_nonprotect_hw | Non-protected AES hardware | Round2 |
+| aes_nonprotect_sw | Non-protected AES software | Round1 |
+| keccak_nonprotect_sw | Non-protected keccak softwRre | Part of Keccak process | 
+| aes_masked_hw | Masked AES hardware | Round10 | 
 | aes_masked_sw | Masked AES software | Entire 10 rounds | 
 
 4. Execute dl_main.py.
