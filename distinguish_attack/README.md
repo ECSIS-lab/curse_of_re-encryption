@@ -1,4 +1,5 @@
 This is the source code for the distinguish attack presented in "Curse of Re-encryption" paper.
+More precisely, this repository is designed to reproduce the results of Section 6 of the paper, that is, the evaluation of implementing plaintext-checking oracle from side-channel traces during PRF execution.
 
 In this repository, we targetted
 non-protected SHAKE (SHA3) and AES in pqm4 as non-protected software
