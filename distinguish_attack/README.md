@@ -58,6 +58,7 @@ https://drive.google.com/file/d/17PSrk208qVx61QSO-jRBXMHunNNNGxVY/view?usp=shari
 The dataset in Google Drive is saved as a zip file, so you will need to unzip it before running ```de.py```.
 Therefore, when running the code, this directory structure should be
 
+```
 dataset/
   ├ aes_nonprotect_sw/
   │  ├ test/
@@ -75,7 +76,7 @@ dataset/
   │     ├ fixed.npy
   │     └ random.npy
   ...
-  
+```
   
 ### ./model
 
