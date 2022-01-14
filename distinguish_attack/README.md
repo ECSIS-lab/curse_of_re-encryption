@@ -68,7 +68,7 @@ Trace num : 2 | Nll test accuracy : 0.9726
 ...
 
 # Note that the seed value is different from the value calculated in the paper, 
-# so it may be calculated differently from the one published in the paper.
+# so each value may be calculated differently from the one published in the paper.
 ```
 
 
