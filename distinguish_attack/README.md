@@ -105,19 +105,19 @@ The python file contains test.
 
 ### ./dl_nll_v1.py
 
-Calculate the log likelihood test accuracy that published in our paper using this Python file.
+The python file calculates the plaintext-checking oracle accuracy using the likelihood comparison.
 
 The values shown in the paper were calculated using this code.
 
-Because of the possibility of underflow, I added a small value to the output probability of the model.
+To avoid underflow, we added a small value (like a clipping balue) to the output probability of NN.
 
 
 
 ### ./dl_nll_v2.py
 
-Calculate the log likelihood test accuracy using this Python file.
+The python file Calculates the log likelihood test accuracy using this Python file.
 
-This code was implemented to prevent underflow without adding small values.
+This is an update of dl_nll_v1.py to avoid underflow using a log softmax instead of adding small values.
 
 
 
