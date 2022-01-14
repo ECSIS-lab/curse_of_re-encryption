@@ -73,13 +73,19 @@ Trace num : 2 | Nll test accuracy : 1.0000
 
 This python file is main function.
 
+
+
 ### ./dl_train.py
 
 The python file contains data-loading and train.
 
+
+
 ### ./dl_test.py
 
 The python file contains test.
+
+
 
 ### ./dl_nll_v1.py
 
@@ -90,6 +96,7 @@ The values shown in the paper were calculated using this code.
 Because of the possibility of underflow, I added a small value to the output probability of the model.
 
 
+
 ### ./dl_nll_v2.py
 
 Calculate the log likelihood test accuracy using this Python file.
@@ -97,9 +104,12 @@ Calculate the log likelihood test accuracy using this Python file.
 This code was implemented to prevent underflow without adding small values.
 
 
+
 ### ./requirements.txt
 
 The text file contains the dependencies of the python packages needed to run dl.py.
+
+
 
 ### ./dataset
 
@@ -129,6 +139,8 @@ dataset/
   │     └ random.npy
   ...
 ```
+  
+  
   
 ### ./model
 
