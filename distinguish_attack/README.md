@@ -68,6 +68,7 @@ Likelihood comparison
 where, 'loss' and 'accuracy' are for training, 'val_loss' and 'val_accuracy' are for validation at the epoch during Train & Validation.
 Test loss and accuracy are found under 'Test'.
 Then, the validation accuracy and test accuracy are summarized like 'val accuracy : 0.9990 | test accuracy : 0.9983'.
+Test accuracy corresponds to Table 6, fisrt paragraph, Section 6.2.
 
 After evaluating the NN accuracy and loss, the accuracy of plaintext-checking oracle using multiple-trace with likelihood comparison is evaluated as follows:
 
@@ -82,6 +83,7 @@ Trace num : 2 | Nll test accuracy : 0.9726
 ```
 
 where the PC oracle accuracy (i.e., NLL test accuracy) is reported for each number of traces (Trace num).
+This corresponds to second paragraph, Section 6.2.
 
 
 ## Repository structure 
