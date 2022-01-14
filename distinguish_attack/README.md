@@ -42,6 +42,8 @@ https://github.com/homma-lab/curse_of_re-encryption (published in this repositor
    
 ## How to view the execution results
 
+After executing dl_main.py, you can find the NN loss and accuracy for training, validation, and test as follows:
+
 ```
 $ python dl_main.py
 
@@ -61,7 +63,15 @@ val accuracy : 0.9990 | test accuracy : 0.9983
 Likelihood comparison
 
 # Note that the calculation will take some time.
+```
 
+where, 'loss' and 'accuracy' are for training, 'val_loss' and 'val_accuracy' are for validation at the epoch during Train & Validation.
+Test loss and accuracy are found under 'Test'.
+Then, the validation accuracy and test accuracy are summarized like 'val accuracy : 0.9990 | test accuracy : 0.9983'.
+
+After evaluating the NN accuracy and loss, the accuracy of plaintext-checking oracle using multiple-trace with likelihood comparison is evaluated as follows:
+
+```
 Accuracy of negative log-likelihood accuracy
 Trace num : 1 | Nll test accuracy : 0.9053
 Trace num : 2 | Nll test accuracy : 0.9726
@@ -70,6 +80,8 @@ Trace num : 2 | Nll test accuracy : 0.9726
 # Note that the seed value is different from the value calculated in the paper, 
 # so each value may be calculated differently from the one published in the paper.
 ```
+
+where the PC oracle accuracy (i.e., NLL test accuracy) is reported for each number of traces (Trace num).
 
 
 ## Repository structure 
