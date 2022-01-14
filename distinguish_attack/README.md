@@ -66,7 +66,6 @@ Accuracy of negative log-likelihood accuracy
 Trace num : 1 | Nll test accuracy : 0.9053
 Trace num : 2 | Nll test accuracy : 0.9726
 ...
-Trace num : 2 | Nll test accuracy : 1.0000
 
 # Note that the seed value is different from the value calculated in the paper, 
 # so it may be calculated differently from the one published in the paper.
