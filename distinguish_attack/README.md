@@ -51,11 +51,11 @@ The text file contains the dependencies of the python packages needed to run dl.
 ### ./dataset
 
 Replace this folder with the folder ```dataset``` that you get when you extract the zip file you downloaded from Google Drive.
-Download the dataset from the link below.
+You can find the dataset from the link below:
 https://drive.google.com/file/d/17PSrk208qVx61QSO-jRBXMHunNNNGxVY/view?usp=sharing
 
 The dataset in Google Drive is saved as a zip file, so you will need to unzip it before running ```de.py```.
-Therefore, when running the code, this directory structure should look like this,
+Therefore, when running the code, this directory structure should be
 
 dataset/
   ├ aes_nonprotect_sw/
