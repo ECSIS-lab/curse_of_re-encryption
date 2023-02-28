@@ -13,7 +13,7 @@ This hardware is used for the experiment in "Curse of Re-encryption" paper.
  The initial masking is performed immediately after data input, and unmasking is performed just before data output.
  This arcthiecture does NOT protect the round key and key scheduling datapath, as it causes no DPA leakage.
  (However it of course causes leakage for the TVLA or input distinguishing attack unless the key is fixed.)
- Roundness is generated using four 128-bit XOR-shifts (each of which generates 32-bit randomness per clock)
+ Randomness is generated using four 128-bit XOR-shifts (each of which generates 32-bit randomness per clock)
  with a hard-coded seed.
  The linear mappings in this architecture is optimized using a technique named "multiplicative-offset."
  See https://ieeexplore.ieee.org/document/8922779 .
