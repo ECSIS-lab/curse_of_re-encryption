@@ -1,7 +1,7 @@
 # curse_of_re-encryption
 
 This repository is for the paper "Curse of Re-encryption: A Generic Power/EM Analysis on Post-Quantum KEMs"
-https://eprint.iacr.org/2021/849
+https://tches.iacr.org/index.php/TCHES/article/view/9298
 
 ## Masked_AES_hardware
 
